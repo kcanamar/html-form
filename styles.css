@@ -50,3 +50,23 @@ h1 {
 }
 
 /* FORMS */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+legend {
+  padding: 0px 10px;
+  font-family: 'Oswald';
+  font-weight: 500;
+  color: var(--purple);
+}
+
+label {
+  font-family: 'Oswald';
+  font-weight: 200;
+  color: var(--bright-green);
+  display: block;
+}
