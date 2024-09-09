@@ -70,3 +70,56 @@ label {
   color: var(--bright-green);
   display: block;
 }
+
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--light-green);
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  /* the outline property selects the default blue border that shows up on inputs. Giving it a value of 0 gets rid of it */
+  outline: 0; 
+  border: 1px solid var(--purple);
+  /* outline-color: var(--purple); */
+}
+
+/* SUBMIT INPUT */
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  background: var(--bright-orange);
+  box-shadow: 2px 2px var(--light-green);
+  font-family: 'Oswald';
+  font-size: 1.3em;
+  color: whitesmoke;
+  border: 0px;
+  transition: 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: var(--bright-green);
+  box-shadow: 2px 2px var(--light-orange);
+}
+
+/* using resize none to make sure the textarea always stays a specific width and height*/
+textarea {
+ resize: none;
+ height: 75px;
+ font-family: 'Oswald';
+  /* resize: none; makes it so that the user cannot resize the textarea at all */
+  /* resize: vertical - makes it so the user can only resize it vertically */
+  /* resize: horizontal - makes it so the user can only resize it horizontal */
+}
+
+/* using max-height and max-width to make it so that the user can only resize up to that point */
+/* textarea {
+  width: 200px;
+  height: 100px;
+  max-width: 400px;
+  max-height: 150px;
+} */
